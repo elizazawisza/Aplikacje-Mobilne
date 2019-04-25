@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="rock">rock</string>
+    <string name="paper">paper</string>
+    <string name="scissors">scissors</string>
+    <string name="computer_won">Computer won</string>
+    <string name="image1">image1</string>
+    <string name="image2">image2</string>
+</resources>
