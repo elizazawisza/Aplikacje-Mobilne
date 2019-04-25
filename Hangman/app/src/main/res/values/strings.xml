@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hangman</string>
+    <string-array name="words_list">
+        <item>COMPUTER</item>
+        <item>ELEPHANT</item>
+        <item>FAMILY</item>
+        <item>MOVIES</item>
+        <item>SCHOOL</item>
+        <item>STUDENT</item>
+        <item>TEACHER</item>
+        <item>ISLAND</item>
+        <item>HEAVEN</item>
+        <item>ROMANCE</item>
+        <item>SINGER</item>
+    </string-array>
+</resources>
