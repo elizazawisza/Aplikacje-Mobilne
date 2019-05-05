@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" app:srcCompat="@drawable/none" android:id="@+id/previousPhoto"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editName" android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="48dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/addDate" android:hint="Name"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editDate" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/addName" android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/itemPriority"
+                    android:singleLine="true" android:hint="Date"/>
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editItemPriority" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/addDate"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:spinnerMode="dropdown"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editDescription" android:singleLine="false" android:hint="Description"/>
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" android:layout_weight="8">
+
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_weight="4">
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/books"
+                            android:id="@+id/editBooks"
+                            android:layout_weight="1"
+                            android:padding="4dip"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/calendar"
+                            android:id="@+id/editCalendar" android:layout_weight="1"
+                            android:padding="4dip"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/capsules"
+                            android:id="@+id/editCapsules" android:layout_weight="1"
+                            android:padding="4dip"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/cart"
+                            android:id="@+id/editCart"
+                            android:layout_weight="1"
+                            android:padding="4dip"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:layout_weight="4">
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/coding"
+                            android:id="@+id/editCoding"
+                            android:layout_weight="1"
+                            android:padding="4dip"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" app:srcCompat="@drawable/film_reel"
+                            android:id="@+id/editFilm_reel" android:layout_weight="1"
+                            android:padding="4dip"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/friendship"
+                            android:id="@+id/editFriendship" android:layout_weight="1"
+                            android:padding="4dip"/>
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" app:srcCompat="@drawable/phone"
+                            android:id="@+id/editPhone"
+                            android:layout_weight="1"
+                            android:padding="4dip"/>
+                </TableRow>
+            </TableLayout>
+            <Button
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editButton" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/itemPriority" android:onClick="clickSave"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

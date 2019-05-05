@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.test.MainActivity">
+    <item android:title="Add" android:id="@+id/add"/>
+    <item android:title="Sort by Priority" android:id="@+id/prioritySort">
+        <menu
+        >
+            <item android:title="Asc" android:id="@+id/pAsc"/>
+            <item android:title="Desc" android:id="@+id/pDesc"/>
+        </menu>
+    </item>
+    <item android:title="Sort by Name" android:id="@+id/nameSort">
+        <menu
+        >
+            <item android:title="Asc" android:id="@+id/nAsc"/>
+            <item android:title="Desc" android:id="@+id/nDesc"/>
+        </menu>
+    </item>
+</menu>
