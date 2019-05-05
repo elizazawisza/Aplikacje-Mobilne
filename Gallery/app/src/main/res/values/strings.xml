@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="got1">Opis pierwszego zdjęcia z Gry o Tron</string>
+    <string name="got2">Opis drugiego zdjęcia z Gry o Tron</string>
+    <string name="got3">Opis trzeciego zdjęcia z Gry o Tron</string>
+    <string name="got4">Opis czwartego zdjęcia z Gry o Tron</string>
+    <string name="got5">Opis piątego zdjęcia z Gry o Tron</string>
+    <string name="got6">Opis szóstego zdjęcia z Gry o Tron</string>
+    <string name="got7">Opis siódmego zdjęcia z Gry o Tron</string>
+    <string name="got8">Opis ósmego zdjęcia z Gry o Tron</string>
+    <string name="lotr1">Opis pierwszego zdjęcia z Władcy Pierścieni</string>
+    <string name="lotr2">Opis drugiego zdjęcia z Władcy Pierścieni</string>
+    <string name="lotr3">Opis trzeciego zdjęcia z Władcy Pierścieni</string>
+    <string name="lotr4">Opis czwartego zdjęcia z Władcy Pierścieni</string>
+    <string name="lotr5">Opis piątego zdjęcia z Władcy Pierścieni</string>
+    <string name="lotr6">Opis szóstego zdjęcia z Władcy Pierścieni</string>
+    <string name="potter1">Opis pierwszego zdjęcia z Harrego Pottera</string>
+    <string name="potter2">Opis drugiego zdjęcia z Harrego Pottera</string>
+    <string name="potter3">Opis trzeciego zdjęcia z Harrego Pottera</string>
+    <string name="potter4">Opis czwartego zdjęcia z Harrego Pottera</string>
+    <string name="potter5">Opis piątego zdjęcia z Harrego Pottera</string>
+    <string name="potter6">Opis szóstego zdjęcia z Harrego Pottera</string>
+</resources>
