@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="#4F6D7A">
+
+    <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:weightSum="25" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/input" android:id="@+id/tableLayout">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <Button
+                    android:text="simplify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/my_button"
+                    android:id="@+id/button" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="factor"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/my_button"
+                    android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"
+                    android:fontFamily="serif-monospace" android:textColor="#E8DAB2" android:onClick="operationButton"
+                    android:textSize="16sp"/>
+            <Button
+                    android:text="derive"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"
+                    android:fontFamily="serif-monospace" android:textColor="#E8DAB2" android:onClick="operationButton"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <Button
+                    android:text="integrate"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button5" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="zeroes"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button6" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="tangent"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button7" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <Button
+                    android:text="area"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button8" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="cos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button9" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="sin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button10" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <Button
+                    android:text="tan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button11" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="arccos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button12" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="arcsin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button13" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <Button
+                    android:text="arctan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button14" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="abs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button15" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+            <Button
+                    android:text="log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:id="@+id/button16" android:layout_weight="1" android:fontFamily="serif-monospace"
+                    android:textColor="#E8DAB2" android:onClick="operationButton" android:textSize="16sp"/>
+        </TableRow>
+    </TableLayout>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="315dp"
+            android:layout_height="87dp"
+            android:id="@+id/input"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="332dp">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="expression" android:id="@+id/textInput" android:textColorHint="#EAEAEA"
+                android:textColor="#E8DAB2" android:textColorLink="#C0D6DF"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+            android:text="Send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:onClick="clickSend"
+            android:layout_marginEnd="62dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="62dp"
+            app:layout_constraintStart_toStartOf="parent" android:background="#EAEAEA"
+            android:fontFamily="serif-monospace" android:textStyle="bold" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="102dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/button2" android:textSize="30sp" android:textColor="#E8DAB2"/>
+
+</android.support.constraint.ConstraintLayout>
